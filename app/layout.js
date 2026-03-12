@@ -19,6 +19,7 @@ export default function RootLayout({ children }) {
               </a>
               <nav style={{ display:'flex', gap:4, alignItems:'center' }}>
                 <a href="/reviews" style={{ padding:'5px 11px', borderRadius:7, border:'1px solid rgba(255,255,255,.05)', color:'#a1a1aa', fontSize:11, textDecoration:'none' }}>⭐ Reviews</a>
+                <a href="/blog" style={{ padding:'5px 11px', borderRadius:7, border:'1px solid rgba(255,255,255,.05)', color:'#a1a1aa', fontSize:11, textDecoration:'none' }}>📝 Blog</a>
                 <a href="/recruiter" style={{ padding:'5px 11px', borderRadius:7, border:'1px solid rgba(255,255,255,.05)', color:'#a1a1aa', fontSize:11, textDecoration:'none' }}>🏢 Recruiter</a>
                 <SignedIn>
                   <a href="/dashboard" style={{ padding:'5px 11px', borderRadius:7, border:'1px solid rgba(52,211,153,.2)', background:'rgba(52,211,153,.1)', color:'#6ee7b7', fontSize:11, fontWeight:600, textDecoration:'none' }}>Dashboard</a>
