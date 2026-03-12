@@ -17,7 +17,9 @@ export default function RootLayout({ children }) {
                 <div style={{ width:6, height:6, borderRadius:'50%', background:'#34d399' }}/>
                 <span style={{ fontSize:18, fontWeight:700, color:'white' }}>Human Data Ops</span>
               </a>
-              <nav style={{ display:'flex', gap:6, alignItems:'center' }}>
+              <nav style={{ display:'flex', gap:4, alignItems:'center' }}>
+                <a href="/reviews" style={{ padding:'5px 11px', borderRadius:7, border:'1px solid rgba(255,255,255,.05)', color:'#a1a1aa', fontSize:11, textDecoration:'none' }}>⭐ Reviews</a>
+                <a href="/recruiter" style={{ padding:'5px 11px', borderRadius:7, border:'1px solid rgba(255,255,255,.05)', color:'#a1a1aa', fontSize:11, textDecoration:'none' }}>🏢 Recruiter</a>
                 <SignedIn>
                   <a href="/dashboard" style={{ padding:'5px 11px', borderRadius:7, border:'1px solid rgba(52,211,153,.2)', background:'rgba(52,211,153,.1)', color:'#6ee7b7', fontSize:11, fontWeight:600, textDecoration:'none' }}>Dashboard</a>
                   <UserButton />
