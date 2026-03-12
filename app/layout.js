@@ -26,3 +26,13 @@ export default function RootLayout({ children }) {
                   <SignInButton mode="modal">
                     <button style={{ padding:'5px 11px', borderRadius:7, border:'1px solid rgba(52,211,153,.2)', background:'rgba(52,211,153,.1)', color:'#6ee7b7', fontSize:11, fontWeight:600, cursor:'pointer', fontFamily:'inherit' }}>Sign In</button>
                   </SignInButton>
+                </SignedOut>
+              </nav>
+            </div>
+          </header>
+          <main style={{ maxWidth:1440, margin:'0 auto', padding:'14px 20px 40px' }}>{children}</main>
+        </ClerkProvider>
+      </body>
+    </html>
+  );
+}
