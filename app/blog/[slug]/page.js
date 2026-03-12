@@ -317,12 +317,3 @@ export default async function BlogPostPage({ params }) {
     </div>
   );
 }
-```
-
----
-
-Now update the layout to add the Blog link too. Edit **`app/layout.js`**, find the `<nav>` section, and add this line right before the Reviews link:
-
-Actually just replace the nav links section. Edit `app/layout.js`, find:
-```
-<a href="/reviews"
