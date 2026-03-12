@@ -1,4 +1,4 @@
-import { ClerkProvider, Show, UserButton, SignInButton } from '@clerk/nextjs';
+import { ClerkProvider, SignedIn, SignedOut, UserButton, SignInButton } from '@clerk/nextjs';
 import './globals.css';
 
 export const metadata = {
@@ -18,21 +18,11 @@ export default function RootLayout({ children }) {
                 <span style={{ fontSize:18, fontWeight:700, color:'white' }}>Human Data Ops</span>
               </a>
               <nav style={{ display:'flex', gap:6, alignItems:'center' }}>
-                <Show when="signed-in">
+                <SignedIn>
                   <a href="/dashboard" style={{ padding:'5px 11px', borderRadius:7, border:'1px solid rgba(52,211,153,.2)', background:'rgba(52,211,153,.1)', color:'#6ee7b7', fontSize:11, fontWeight:600, textDecoration:'none' }}>Dashboard</a>
                   <UserButton />
-                </Show>
-                <Show when="signed-out">
+                </SignedIn>
+                <SignedOut>
                   <SignInButton mode="modal">
                     <button style={{ padding:'5px 11px', borderRadius:7, border:'1px solid rgba(52,211,153,.2)', background:'rgba(52,211,153,.1)', color:'#6ee7b7', fontSize:11, fontWeight:600, cursor:'pointer', fontFamily:'inherit' }}>Sign In</button>
                   </SignInButton>
-                </Show>
-              </nav>
-            </div>
-          </header>
-          <main style={{ maxWidth:1440, margin:'0 auto', padding:'14px 20px 40px' }}>{children}</main>
-        </ClerkProvider>
-      </body>
-    </html>
-  );
-}
